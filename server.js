@@ -25,7 +25,7 @@ app.use((req,res,next)=>{
 
 app.use(express.json());
 
-let PORT = process.env.PORT || 9000;
+let PORT = process.env.PORT || 80;
 
 //////////////////// User Data /////////////////////
 
@@ -249,5 +249,5 @@ app.delete('/movies/:id',async (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log('Application is running on port 9000');
+  console.log('Application is running on port 80');
 });
